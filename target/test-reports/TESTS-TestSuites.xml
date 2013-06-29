@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="L--156000502" id="0" name="UsersResourceTests" package="testwsrest" tests="1" time="13.422" timestamp="2013-06-29T07:21:46">
+      <properties />
+
+      <testcase classname="testwsrest.UsersResourceTests" name="testPostAndGet" time="13.375">
+          <failure message="org.junit.ComparisonFailure: expected:&lt;[[&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;user id=&quot;1&quot;&gt;&lt;password&gt;Hill&lt;/password&gt;&lt;username&gt;Sam&lt;/username&gt;&lt;/user&gt;]]&gt; but was:&lt;[&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;user id=&quot;1&quot;&gt;&lt;password&gt;Hill&lt;/password&gt;&lt;username&gt;Sam&lt;/username&gt;&lt;/user&gt;]&gt;" type="junit.framework.AssertionFailedError">	at testwsrest.UsersResourceTests.testPostAndGet(UsersResourceTests.groovy:21)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testPostAndGet--
+Add Employee
+<?xml version="1.0" encoding="UTF-8"?><user id="1"><password>Hill</password><username>Sam</username></user>
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testPostAndGet--
+Jun 29, 2013 12:51:48 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  groovy.util.ConfigObject@78d1e
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.servlet.SpringServlet getContext
+INFO: Using default applicationContext
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.DomainObjectWriter, of type org.grails.jaxrs.provider.DomainObjectWriter as a provider class
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, myResourceResource, of type my.pack.MyResourceResource as a root resource class
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.XMLReader, of type org.grails.jaxrs.provider.XMLReader as a provider class
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, usersResource, of type testwsrest.UsersResource as a root resource class
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.XMLWriter, of type org.grails.jaxrs.provider.XMLWriter as a provider class
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.DomainObjectReader, of type org.grails.jaxrs.provider.DomainObjectReader as a provider class
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.JSONWriter, of type org.grails.jaxrs.provider.JSONWriter as a provider class
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.JSONReader, of type org.grails.jaxrs.provider.JSONReader as a provider class
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, my.pack.MyResourceResource, of type my.pack.MyResourceResource as a root resource class
+Jun 29, 2013 12:51:48 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, testwsrest.UsersResource, of type testwsrest.UsersResource as a root resource class
+Jun 29, 2013 12:51:48 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.14 09/09/2012 05:39 PM'
+Jun 29, 2013 12:51:53 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  groovy.util.ConfigObject@78d1e
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.servlet.SpringServlet getContext
+INFO: Using default applicationContext
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.DomainObjectWriter, of type org.grails.jaxrs.provider.DomainObjectWriter as a provider class
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, myResourceResource, of type my.pack.MyResourceResource as a root resource class
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.XMLReader, of type org.grails.jaxrs.provider.XMLReader as a provider class
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, usersResource, of type testwsrest.UsersResource as a root resource class
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.XMLWriter, of type org.grails.jaxrs.provider.XMLWriter as a provider class
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.DomainObjectReader, of type org.grails.jaxrs.provider.DomainObjectReader as a provider class
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.JSONWriter, of type org.grails.jaxrs.provider.JSONWriter as a provider class
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, org.grails.jaxrs.provider.JSONReader, of type org.grails.jaxrs.provider.JSONReader as a provider class
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, my.pack.MyResourceResource, of type my.pack.MyResourceResource as a root resource class
+Jun 29, 2013 12:51:53 PM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, testwsrest.UsersResource, of type testwsrest.UsersResource as a root resource class
+Jun 29, 2013 12:51:53 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.14 09/09/2012 05:39 PM'
+]]></system-err>
+
+  </testsuite>
+</testsuites>
